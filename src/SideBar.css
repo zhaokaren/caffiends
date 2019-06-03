@@ -1,0 +1,20 @@
+.SideBar{
+    background-color:white;
+    width:80px;
+    height:100vh;
+    position:fixed;
+    z-index:2
+}
+
+.heading-table{
+    padding-top:50px;
+    position: absolute;
+    top: 50%;
+    margin-left:-5px;
+}
+.heading{
+    transform: rotate(-90deg)
+}
+.heading td{
+    font-size:24px;
+}

@@ -1,0 +1,16 @@
+.review-icon{
+    float:left;
+    padding-right:5px;
+    display:block;
+    width:50px
+}
+.review-blurb{
+    vertical-align: top;
+    text-align:left
+
+}
+.review-name{
+    font-size:16px;
+    margin:0;
+    float:left
+}
