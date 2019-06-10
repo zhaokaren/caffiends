@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import photo from './photos/two.jpg';
 import Popup from './Popup.js'
 import './Photo.css'
 
@@ -29,6 +28,7 @@ class Photo extends Component {
                     ratings={this.props.ratings}
                     maps={this.props.maps}
                     photo={this.props.photo}
+                    photos={this.props.photos}
                     cafeName={this.props.name}
                     location={this.props.location}
                     blurb={this.props.blurb}

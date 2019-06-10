@@ -10,10 +10,17 @@
     
   }
 
+.photo-scroll-main{
+    overflow: scroll;
+    height:100vh;
+    scroll-behavior: auto;
+}
+.photo-scroll-main::-webkit-scrollbar { 
+    display: none; 
+} 
 .photo-scroll{
     width:50vw;
-    position:absolute;
-    z-index:1;
+
 }
 
 .catergory{
@@ -35,7 +42,11 @@
     margin-right:6px;
 }
 .pin-text{
-    display:inline
+    display:inline;
+    color:black
+}
+.pin-text:hover{
+    color:black
 }
 .dot{
     height:22px;
@@ -54,17 +65,36 @@ td > img{
 }
 .back-button{
     width:40px;
-    position:absolute;
-    left:30px;
+    position:fixed;
+    left:100px;
     top:15px;
     z-index:2;
 }
 .back-button:hover{
-    box-shadow: 10px 10px 5px grey;
+    zoom:1.1;
 }
 .mini-blurb{
     width:450px;
     margin-left: auto;
     margin-right: auto;
     padding:10px;
+}
+.tag{
+    border: 1px solid #AB9968;
+    border-radius: 12px;
+    font-size:10px;
+    padding:3px;
+    padding-left:8px;
+    padding-right:8px;
+    display:inline-block
+}
+
+.ind{
+    position:fixed;
+    left:51vw;
+    top:50vh;
+
+}
+.ind-dot{
+    width:10px;
 }

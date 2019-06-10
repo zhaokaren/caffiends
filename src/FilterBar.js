@@ -37,10 +37,11 @@ class FilterBar extends Component {
                         <tr><p className="item-menu item-bar">Plant Vibes</p></tr>
                         <tr><p className="item-menu item-bar">Minamislist</p></tr>
                         <tr><p className="item-menu item-bar">Modern Retro</p></tr>
-                    </table> <table className="item-table item-menu">
-                        <tr><p className="item-menu">Filter: <b>Menu</b></p></tr>
-                        <tr><p className="item-menu item-bar">Vegan/Dairy Free</p></tr>
-                        <tr><p className="item-menu item-bar">Snacking</p></tr>
+                    </table> 
+                    <table className="item-table item-menu">
+                        <tr><p className="item-menu">Filter: <b>Aesthetic</b></p></tr>
+                        <tr><p className="item-menu item-bar">Plant Vibes</p></tr>
+                        <tr><p className="item-menu item-bar">Minamislist</p></tr>
                         <tr><p className="item-menu item-bar">Lunch</p></tr>
                     </table>
                 </div>

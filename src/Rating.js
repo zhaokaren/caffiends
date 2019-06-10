@@ -25,8 +25,17 @@ class AppR extends React.Component {
     return (
 			<div>
 				<table className="ranking-table">
-          <tr className={this.props.style}>
-            <td>{arr}</td>
+          {arr}
+          <tr>
+            <td className="catergory">
+              Workspace: 
+            </td>
+            <td className="tag-one">
+                <div className="tag" >Wifi: <b>Fast</b></div>
+                <div className="tag" >Large Tables </div>
+            </td>
+
+
           </tr>
         </table>
 			</div>

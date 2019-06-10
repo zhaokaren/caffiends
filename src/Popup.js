@@ -2,25 +2,32 @@ import React, {Component} from 'react'
 import './Popup.css'
 import AppR from './Rating.js'
 import pin from './locationpin.png'
-import dot from './dot.png'
-import back from './back.svg'
 import Blurb from './Blurb.js'
+import backshadow from './x.png'
+import PhotoScroll from './PhotoScroll.js'
+import Dots from './Dots';
 
 class Popup extends Component{
     render(){
         return(
             <div className="popup">
                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <img className="photo-scroll" src={this.props.photo}/>
-                        <img onClick={this.props.closePopup} className="back-button" src={back}/>
+                    <div class="col-lg-6 col-md-6 col-sm-12 photo-scroll-main">
+                    <img onClick={this.props.closePopup} className="back-button" src={backshadow}/>
+                    <Dots/>
+                        <div>
+                            <PhotoScroll 
+                                photos={this.props.photos}
+                            />
+                            
+                        </div>
                     </div>
                     
-                    <div class="col-lg-6 col-md-6" id="rating">
+                    <div class="col-lg-6 col-md-6 col-sm-12" id="rating">
                             <h3 className="cafe-name">{this.props.cafeName}</h3>
                             <div>
                                 <img className="pin" src={pin}></img>
-                                <p href={this.props.maps} className="pin-text">{this.props.location}</p> 
+                                <a href={this.props.maps} className="pin-text">{this.props.location}</a> 
 
                             </div>
                             <div className="mini-blurb">
