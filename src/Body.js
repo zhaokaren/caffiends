@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Photo from './Photo.js';
 import Data from './Data.js'
 import './Body.css'
+import Question from './Question.js'
 
 class Body extends Component{
     constructor(props) {
@@ -14,10 +15,18 @@ class Body extends Component{
     }
 
     filterContent(id) {
-        this.setState({
-            selectedContentId: id
-        });
-    }
+        if (this.state.selectedContentId === id) {
+            this.setState({
+                selectedContentId: " "
+            });
+        } else {
+            this.setState({
+                selectedContentId: id
+            });
+        }
+     }
+
+
     render(){
         let results = []
         if (this.state.selectedContentId == " "){  
@@ -53,7 +62,6 @@ class Body extends Component{
                     </tr>
                     </table>
                 </div>
-
                 <div className="filterbar">
                 </div>
                 <div className="itembar">

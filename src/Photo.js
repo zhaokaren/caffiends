@@ -21,6 +21,7 @@ class Photo extends Component {
             <div className="photos">
             <div >
                 <img  className="display" id={this.props.name} src={this.props.photo} onClick={this.togglePopup.bind(this)}></img>
+                <h4 className="page-title">{this.props.name}</h4>
             </div>
                 {this.state.showPopup ? 
                     <Popup

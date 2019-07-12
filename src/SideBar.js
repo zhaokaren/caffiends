@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './SideBar.css'
+import Question from './Question.js'
 
 class SideBar extends Component {
     render(){
@@ -10,6 +11,7 @@ class SideBar extends Component {
                         <td>
                             Cafiends
                         </td>
+
                     </tr>
                 </table>
             </div>

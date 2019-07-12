@@ -1,6 +1,6 @@
 .display{
     width:325px;
-    margin:30px
+    margin:30px 30px 0px 30px
 }
 .display:hover{
     opacity:0.5;
@@ -8,4 +8,9 @@
 }
 .photos{
     display:inline-block
+}
+
+.page-title{
+    color:#9E9E9E;
+    margin-left:30px
 }

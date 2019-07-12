@@ -13,6 +13,7 @@ import seven from './photos/seven.png';
 import one2 from './photos/Photo2.jpeg'
 import FilterA from './FilterA.js'
 import Body from './Body.js'
+import Question from './Question.js'
 
 
 
@@ -20,7 +21,6 @@ function App() {
   return (
     <div className="App">
         <SideBar/>
-
         <Body/>
 
     </div>
