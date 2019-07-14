@@ -6,6 +6,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
+    z-index:200;
     background-color:white;
     
   }
@@ -29,7 +30,7 @@
 }
 #rating{
     text-align:center;
-    padding:130px;
+    padding-top:130px;
     
 }
 
@@ -70,8 +71,12 @@ td > img{
     top:15px;
     z-index:2;
 }
+.back-button img{
+    width:40px;
+}
 .back-button:hover{
-    zoom:1.1;
+    transform: translateX(-10px);
+    transition: 0.5s;
 }
 .mini-blurb{
     width:450px;

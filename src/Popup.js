@@ -13,7 +13,9 @@ class Popup extends Component{
             <div className="popup">
                  <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 photo-scroll-main">
-                    <img onClick={this.props.closePopup} className="back-button" src={backshadow}/>
+                    <div className="back-button">
+                    <img onClick={this.props.closePopup}  src={backshadow}/>
+                    </div>
                     <Dots/>
                         <div>
                             <PhotoScroll 
@@ -41,9 +43,7 @@ class Popup extends Component{
                             />
                             </div>
                             <br></br>
-                            <Blurb
-                                blurb={this.props.karen}
-                            />
+                            
                     </div>
                 </div>
             </div>
